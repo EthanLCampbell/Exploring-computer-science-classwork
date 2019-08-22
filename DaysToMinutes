@@ -1,0 +1,5 @@
+def my_func(Days): #Creates function with input as "days" for the number of days to be converted into minutes
+  return Days*60*24 #1440 is the number of minutes in one day
+Days = int(input("How many days do you want to convert into minutes?")) #changes input to variable name "Days"
+Days_Str = str(Days) #changes days into a string to be printable
+print("\nThere are " + str(my_func(Days)) + " minutes in " + Days_Str + " days") #puts int of days into function
