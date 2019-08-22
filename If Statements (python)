@@ -1,0 +1,19 @@
+age = input("What is your age?")
+age.strip()
+age_int = int(age)
+if age_int < 1:
+  print("error")
+if age_int < 5:
+  print("you are too young for school")
+if age_int == 5:
+  print("You are in: kindergarten")
+if age_int == 6:
+  print("You are in: 1st grade")
+if age_int == 7:
+  print("You are in: 2nd grade")
+if age_int == 8:
+  print("You are in: 3rd grade")
+if age_int >= 9 and age_int <= 17:
+  print("You are in: " + str(age_int-5) + "th grade")
+if age_int > 17:
+  print("You are out of school")
