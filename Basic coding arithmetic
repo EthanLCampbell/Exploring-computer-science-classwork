@@ -1,0 +1,19 @@
+A = int(input("What will your A value be?")) #user input # 1 
+B = int(input("What will your B value be?"))#user input # 2 
+ABdifference = str(abs(A-B)+1) 
+sumnum = 0
+
+if B>A: 
+  print("\nThe Values are as follow: "),
+  for x in range(A, B + 1, 1):
+    print(x),
+    sumnum += x
+  print("\n\nThe count of numbers is:" + ABdifference)
+  print("\nThe sum of numbers is:" + str(sumnum))
+else: 
+  print("\nThe Values are as follow: "),
+  for x in range(A, B-1, -1):
+    print(x),
+    sumnum += x
+  print("\n\nThe count of numbers is:  " + ABdifference)
+  print("\nThe sum of numbers is:  " + str(sumnum))
