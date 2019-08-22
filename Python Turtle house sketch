@@ -1,0 +1,185 @@
+import turtle #Neel and Ethan's 
+t = turtle.Turtle()
+t.speed(0) #speed instant
+
+
+
+t.up() #street
+t.goto(-600,-200)
+t.fillcolor("#909090") #turn to gray
+t.begin_fill()
+t.down()
+t.goto(-600,-280)
+t.goto(600,-280)
+t.goto(600,-200)
+t.goto(-600,-200)
+t.end_fill()
+
+
+
+t.up()
+t.goto(600,-280)
+t.goto(600,-240) 
+t.goto(-550,-240) 
+
+for numbers in range (14): #repeats the functions below 14 times
+  t.down()
+  t.forward(50) #road lines
+  t.up()
+  t.forward(30)
+
+t.up()
+t.goto(-500,-200) #driveway starts here
+t.down()
+t.goto(-475,0)
+t.up()
+t.goto(-425,-0)
+t.down()
+t.goto(-400,-200)
+t.up()
+t.goto(-425,0)
+t.down()
+t.goto(-350,0)
+t.goto(-385,100)
+t.up()
+t.goto(-475,0)
+t.down()
+t.goto(-550,0)
+t.goto(-515,100)
+#garage starts here
+t.goto(-530,100)
+t.goto(-530,175)
+t.goto(-350,175)
+t.goto(-350,100)
+t.goto(-530,100)
+#garage top starts here
+t.up
+t.goto(-530,175)
+t.goto(-550,175)
+t.goto(-550,185)
+t.goto(-325,185)
+t.goto(-330,185)
+t.goto(-330,175)
+
+t.goto(-350,175)
+t.up()
+t.goto(-385,100)
+t.down()
+t.goto(-385,150)
+t.goto(-500,150)
+t.goto(-500,100)
+
+#walkway starts here
+t.up()
+t.goto(-350,0)
+t.down()
+t.goto(10,0)
+t.goto(3,70)
+t.up()
+t.goto(-360,25)
+t.down()
+t.goto(-25,25)
+t.goto(-22,70)
+t.end_fill()
+
+t.fillcolor ("#20B2AA")
+t.begin_fill()  #house base starts here
+t.goto(270,70)
+t.goto(-250,70) #house walls starts here
+t.goto(-250,200)
+t.goto(-50,200)
+t.goto(-50,320)
+t.goto(270,320)
+t.goto(270,70)
+t.end_fill()
+
+t.goto(270,320)#top roof  starts here
+t.goto(300,320)
+t.goto(300,335)
+t.goto(-75,335)
+t.goto(-75,320)
+t.goto(-20,320)
+t.up()
+t.goto(-275,200)
+t.down() #low roof starts here
+t.goto(-50,200)
+t.goto(-50,210)
+t.goto(-275,210)
+t.goto(-275,200)
+
+t.up() #door  starts here
+t.goto(-22,70)
+t.fillcolor("#654321")
+t.begin_fill()
+t.down()
+t.goto(-22,130)
+t.goto(3,130)
+t.goto(3,70)
+t.goto(-22,70)
+t.end_fill()
+t.up()
+t.goto(-3,100)
+t.down()
+t.circle(2)
+t.up()
+
+#circle window starts here
+t.goto(20,250)
+t.down()
+t.circle(20)
+t.up()
+t.goto(20,290)
+t.down()
+t.goto(20,250)
+t.up()
+t.goto(40,270)
+t.down()
+t.goto(0,270)
+
+#rectangle left window starts here
+t.fillcolor("#ffffff")
+t.up()
+t.goto(-225,100)
+t.begin_fill()
+t.down()
+t.goto(-225,175)
+t.goto(-75,175)
+t.goto(-75,100)
+t.goto(-225,100)
+t.end_fill()
+#bottom right window starts here
+t.up()
+t.goto(75,100)
+t.begin_fill()
+t.down()
+t.goto(75,175)
+t.goto(250,175)
+t.goto(250,100)
+t.goto(75,100)
+t.end_fill()
+t.up()
+#top right starts
+t.goto(75,100)
+t.begin_fill()
+t.goto(75,285)
+t.up()
+t.goto(250,285)
+t.goto(250,210)
+t.goto(75,210)
+t.end_fill()
+t.up()
+t.goto(75,100)
+t.down()
+for number in range (6):
+  t.forward(10)
+  t.left(90)
+  t.forward(10)
+  t.right(90)
+  t.forward(10)
+t.forward(65)
+
+t.up()
+t.goto(40,0)
+t.down()
+t.fillcolor("#654321")
+t.write("Ethan and Neel's House")
